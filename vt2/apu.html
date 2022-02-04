@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="tyylit.css" type="text/css" />
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+	<h2>Joukkue</h2>
+	<form action="foobar.ei.toimi.example" method="post">
+		<fieldset>
+			<legend>Uusi joukkue</legend>
+			<p><label>Nimi <input type="text" value="" /></label></p>
+			<fieldset>
+				<legend>Jäsenet</legend>
+				<p><label>Jäsen 1 <input type="text" value="" /></label></p>
+				<p><label>Jäsen 2 <input type="text" value="" /></label></p>
+				...
+			</fieldset>
+			<p><button name="joukkue">Lisää joukkue</button></p>
+		<fieldset>
+				<legend>Rastileimaukset</legend>
+				<table>
+					<th>Koodi</th><th>Aika</th>
+					<tr>
+						<td>
+							<select>
+								<option selected="selected">6D</option>
+								<option>Lähtö</option>
+							</select>
+						</td>
+						<td><input type="text" value="2017-06-23 13:34:22" /></td>
+						<td><input type="button" value="Poista" /></td>
+					</tr>
+				</table>
+				<fieldset>
+					<legend>Lisää rastileimaus</legend>
+					<select>
+						<option>6D</option>
+						<option>4E</option>
+					</select>
+					<input type="datetime"/>
+					<input type="date"/>
+					<input type="time"/>
+					<input type="button" value="Lisää" />
+				</fieldset>
+		</fieldset>
+	</form>
+
+	</body>
+</html>

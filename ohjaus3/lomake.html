@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8" />
+		<title>Henkilötietolomake</title>
+		<link href="tyylit.css" rel="stylesheet" type="text/css"/>
+		<script src="ohjaus3.js"></script>
+	</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Henkilötiedot</legend>
+			<label>Etunimi <input type="text" required="required"></label>
+			<label>Sukunimi <input type="text" required="required"></label>
+			<label>Puhelinnumero <input type="tel" pattern="[\+]358[0-9]+" required="required"></label>
+			<label>Syntymäaika <input type="date" min="1917-01-01" max="2000-01-01" required="required"></label>
+			<label>Sähköpostiosoite <input type="email" pattern=".*@student.jyu.fi" required="required"></label>
+			
+			<p>Sukupuoli
+				<span>
+					<label>
+						Mies<input type="radio" id="mies" name="sukupuoli" value="mies" required="required">
+					</label>
+					<label>
+						Nainen<input type="radio" id="nainen" name="sukupuoli" value="nainen" required="required">
+					</label>
+				</span>
+			</p>
+			<label>Kotisivun osoite <input type="url" required="required"></label>
+			<label>Salasana <input type="password" minlength="8" required="required"></label>
+			<label>Lempiväri <input type="color" required="required"></label>
+			<label>Lempiruoka <input list="ruuat" required="required">
+				<datalist id="ruuat">
+					<option value="Makaronilaatikko">
+					<option value="Hernekeitto">
+					<option value="Maksalaatikko">
+					<option value="Lihapullat">
+				</datalist>
+			</label>
+			<label>Pituus (cm) <input type="number" required="required"></label>
+			<label>Paino (40-200 kg) <input type="range" name="paino" min="40" max="200" required="required"></label>
+			<label>Päivämäärä ja kellonaika <input type="datetime-local" max="2017-09-01" required="required"></label>
+		</fieldset>
+		<fieldset class="short">
+			<legend>Kurssit</legend>
+			<p><label>
+				<input type="checkbox" name="kurssit" value="ITKP101">
+				ITKP101 Tietokone ja tietoverkot työvälineenä
+			</label></p>
+			<p><label>
+				<input type="checkbox" name="kurssit" value="ITKP1011">
+				ITKP1011 Web-julkaiseminen
+			</label></p>
+			<p><label>
+				<input type="checkbox" name="kurssit" value="TIEA2120">
+				TIEA2120 Web-käyttöliittymien ohjelmointi
+			</label></p>
+			<p><label>
+				<input type="checkbox" name="kurssit" value="TIEA2080">
+				TIEA2080 Web-palvelinohjelmointi
+			</label></p>
+		</fieldset>
+		<fieldset>
+			<legend>Laitos</legend>
+			<label>
+				<select name="laitos" required="required">
+					<optgroup label="Informaatioteknologinen tiedekunta">
+						<option>Tietojärjestelmätieteen laitos</option>
+						<option>Tietotekniikan laitos</option>
+					</optgroup>
+					<optgroup label="Matemaattis-luonnontieteellinen tiedekunta">
+						<option>Bio- ja ympäristötieteiden laitos</option>
+						<option>Fysiikan laitos</option>
+						<option>Kemian laitos</option>
+						<option>Matematiikan ja tilastotieteen laitos</option>
+					</optgroup>
+				</select>
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>Vapaa sana</legend>
+				<textarea name="teksti" rows="12" cols="40"></textarea>
+		</fieldset>
+		<button>Tallenna</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="StyleSheet" href="malli.css" type="text/css" />
+	<script src="ohjaus5.js"></script>
+	<title>Ohjaus5</title>
+</head>
+<body>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-1">Lomake</a></li>
+			<li><a href="#tab-2">Lorem ipsum</a></li>
+		</ul>	
+		<div id="tab-1">
+			<h1>Ohjaus 5</h1>
+			<form>
+			<p>Päivämäärä:<input type="text" id="datepicker"></p>
+			<label>Malli1 <input type="text" required="required" value="1" name="eka" /></label>
+			<label>Malli2 <input type="text" required="required" value="2" name="toka"/></label>
+			<label>Malli3 <input type="text" value="3" name="kolkki" /></label>
+			<label>Malli4 <input type="text" required="required" value="4" name="nelkki" /></label>	
+			</form>
+			<div id="drag" style="background-color: #ff7fff; width: 10em;">Tätä voi kohta raahaamalla siirtää</div>
+			<div id="drag2" style="background-color: #ff7fff; width: 10em;">Tätä voi kohta raahaamalla kopioida</div>
+			<div id="drop" style="border:1px solid black; height: 10em; background-color: yellow;">Tänne voi kohta pudottaa</div>
+		</div>
+		<div id="tab-2">
+			<p>
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+		</div>
+	</div>
+	<div id="dialog" title="Lähetä tiedot">
+		<p>Oletko aivan varma?</p>
+	</div>
+	
+	
+	
+</body>
+</html>

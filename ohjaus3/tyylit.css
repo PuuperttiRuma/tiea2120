@@ -1,0 +1,35 @@
+form fieldset > label {
+	display: block;
+	width: 30em;
+	min-height: 2em;
+}
+
+label input {
+	float: right;
+}
+
+p span {
+	float: right;
+}
+
+p {
+	width: 30em;
+}
+
+p label > input{
+	float: none;
+}
+
+:required {
+	border: 1px solid blue;
+}
+
+input:invalid {
+	border: 2px dashed red;
+	padding: 2px;
+}
+
+input:valid {
+	border: 1px solid black;
+	padding: 2px;
+}

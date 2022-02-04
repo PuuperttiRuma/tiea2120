@@ -1,0 +1,20 @@
+#tiedot{
+	display: flex;
+	justify-content: center;
+}
+
+h2{
+	margin-top: 2px;
+}
+
+ul {	
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.lista{	
+	margin: 0 0.5em;	
+	border: 1px solid black;
+}

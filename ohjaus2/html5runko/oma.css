@@ -1,0 +1,139 @@
+
+html {
+  background-color: black;
+}
+
+body {
+	margin: 5%;
+  background-color: #000055;
+	color: white;
+	padding: 1%;
+}
+
+p {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 0.9em;
+}
+
+h2, h3 {
+	margin-left: 2%;
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+	font-style: italic;
+}
+
+#menu {
+	float: right;
+	background-color: white;
+	color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+#menu ul li ul{
+	list-style-type: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-left: 0.8em;
+	margin-top: 0;
+}
+
+.hide{
+	display: none;
+}
+
+.virhe{
+	background-color: red;
+	color: black;
+}
+	
+#omakuva {
+  float: right;
+	
+}
+
+a:visited {
+	color: #c000c0;
+}
+
+a:link {
+	color: #6666ff;
+	font-weight: bolder;
+}
+
+
+a:hover {
+	background-color: white;
+	color: red;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	list-style-type: square;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1.1em;
+}
+
+
+ul li ul {
+	font-size: 0.9em;
+}
+
+
+pre {
+	line-height: 1.5em;
+	text-align: center;
+	border: 1px dashed white;
+	width: 30em;
+  margin-left: 10%;
+}
+
+table {
+	border-right : 4px solid black;
+  border-bottom: 4px solid black;
+  border-top: 2px solid #EAE4D1;
+  border-left: 2px solid #EAE4D1;
+	color: white;
+	background: #333333;
+  empty-cells: show;
+	border-spacing: 0.4em;
+  margin-left: 20%;
+  margin-right: 2%;
+  margin-bottom: 1em;
+  border-collapse: separate;
+	font-family: "Palatino Linotype", serif;
+}
+
+
+td {
+     padding: 0.4em;
+     border-right: 2px solid #666666;
+		 border-bottom: 2px solid #666666;
+		 border-top: 1px solid #999999;
+		 border-left: 1px solid #999999;
+}
+
+th {
+  background: #3333cc none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-right: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+  border-top: 1px solid #999999;
+  border-left: 1px solid #999999;
+  padding: 0.4em;
+}

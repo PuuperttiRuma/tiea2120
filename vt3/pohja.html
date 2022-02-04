@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://appro.mit.jyu.fi/tiea2120/vt/vt3/data.js"></script>
+        <script type="text/javascript" src="vt3.js"></script>
+        <link rel="StyleSheet" href="tyylit.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <title>Tulospalvelu</title>
+    </head>
+    <body>
+        <!-- Tämän tiedoston sisältöä saa muuttaa vapaasti tästä kommentista eteenpäin ! -->
+		<div class="lomake1">
+			<h1>Lisää joukkue</h1>
+			<form id="joukkueForm">
+				<fieldset>
+					<legend>Joukkueen tiedot</legend>
+					<label>Nimi <input type="text" name="nimi" size="30" required="required"></label>
+					<label>
+						Luontiaika 
+						<input type="datetime-local" name="luontiaika" max="2018-01-01T01:00" step="1"></label>
+					<p>Leimaustapa
+						<span>
+							<label>GPS<input type="checkbox" name="leimaustapa" value="GPS"></label>
+							<label>NFC<input type="checkbox" name="leimaustapa" value="NFC"></label>
+							<label>QR<input type="checkbox" name="leimaustapa" value="QR"></label>
+							<label>Lomake<input type="checkbox" name="leimaustapa" value="Lomake"></label>
+						</span>
+					</p>
+					<label>Kilpailu 
+						<select id="kilpailu">
+						</select>
+					</label>
+					<p id="sarja">Sarja
+						<span>
+						</span>
+					</p>
+				</fieldset>
+				<fieldset id="jasenetField">
+					<legend>Jäsenet</legend>
+				</fieldset>
+				<fieldset id="leimaukset">
+					<datalist></datalist>
+					<legend>Rastileimaukset</legend>
+					<table id="leimataulukko">
+						<tr>
+							<th>Rasti</th>
+							<th>Aika</th>
+							<th>Poista</th>
+						</tr>				
+					</table>
+				</fieldset>
+				<button>Tallenna</button>
+			</form>
+		</div>
+		<div class="lomake2">
+			<h1>Lisää kilpailu</h1>
+			<form id="kisaForm">
+				<fieldset>
+					<legend>Kilpailun tiedot</legend>
+					<label>Nimi <input type="text" name="kilpailu" size="30" required="required"></label>
+					<label>Kesto <input type="number" name="kesto" step="1" min="1" required="required"></label>
+					<label>Alkuaika <input type="datetime-local" name="alkuaika" required="required"></label>
+					<label>Loppuaika <input type="datetime-local" name="loppuaika" required="required"></label>	
+				</fieldset>
+				<button>Tallenna</button>
+			</form>
+		</div>
+    </body>
+</html>

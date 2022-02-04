@@ -1,0 +1,47 @@
+text {
+	fill: yellow;
+	font-size: 2em;
+}
+
+circle {
+	fill: blue;
+}
+
+.stop1 {
+	stop-color: orange;
+}
+
+.stop2 {
+	stop-color: yellow;
+}
+
+.stop3 {
+	stop-color: red;
+}
+
+.otsikko {
+	animation-duration: 3s;
+	animation-name: slide;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+
+@keyframes slide {
+	from {
+		color: red;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+	}
+	50%{
+		font-size: 500%;
+		color: black;
+	}
+	to {
+		color: red;
+		position: absolute;
+		left: 100%;
+		top: 100%;
+	}
+}

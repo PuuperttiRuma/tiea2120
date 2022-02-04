@@ -1,0 +1,170 @@
+@media all{	
+	body{
+		display: flex;
+		flex-flow: row  wrap;
+		align-content: flex-start;
+	}
+
+	.lomake1{
+		order: 1;
+		flex: none;
+	}
+	
+	.lomake2{
+		order: 2;
+		flex: 1 1 100%;
+	}
+
+	#joukkuelista{
+		order: 2;
+		margin: 0.5em 0 0.5em 1em;
+	}
+
+	#joukkuelista ul{	
+		padding-left: 1.5em;
+	}
+
+	form fieldset {
+		width: 22em;
+	}
+	
+	form fieldset > label {
+		display: block;
+		margin: 1em 0 1em 0;
+		clear: both;
+	}
+
+	label input {
+		float: right;
+	}
+	
+	label select {
+		float: right;
+	}
+	
+	p {
+		margin: 0 0 0 0; 
+	}
+
+	p label {
+		display: block;
+		float: right;
+		clear: both;
+	}
+
+	p span {
+		float: right;
+		padding-bottom: 0.5em;
+	}
+
+	p label > input {
+		float: none;
+	}
+	
+	button {
+		margin: 2px;
+	}
+	
+}
+
+@media all and (min-width: 1200px){
+	
+	body{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.lomake1{
+		order: 2;
+		flex: 0 0 30%;
+	}
+	
+	.lomake2{
+		order: 3;
+		flex: 0 0 30%;
+	}
+
+	#joukkuelista{
+		order: 1;
+		margin: 0;
+		flex: 1 1 100%;
+		display: flex;
+		max-height: 6em;
+	}
+
+	#joukkuelista h2{
+		margin: 0;
+		align-self: center;
+	}
+
+	#joukkuelista ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: inline-flex;
+		flex-flow: column wrap;
+	}
+
+	#joukkuelista li{
+		margin: 0.1em 1em;
+		flex: 0 0 1em;
+	}
+}
+
+@media all and (max-width: 600px){
+	form fieldset {
+		width: fit-content;
+	}
+	
+	label input {
+		float: none;
+	}
+	
+	p label {
+		display: inline;
+		float: none;
+		clear: none;
+	}	
+	
+	p span {
+		float: none;
+		padding: 0.2em;
+	}
+	
+	body{
+		flex-flow: column;
+	}
+	
+	label select {
+		float: none;
+	}
+	
+	.lomake1{
+		order: 1;
+		flex: none;
+	}
+	
+	.lomake2{
+		order: 2;
+		flex: none;
+	}
+
+	#joukkuelista{
+		order: 3;
+		flex: none;
+		margin: 0.5em 1em;
+	}
+	
+}
+
+@media all and (max-width: 360px){
+	p {
+		margin: 0 0 0.3em 0;
+	}
+	
+	p span {
+		display: block;
+		padding: 0.2em;
+	}
+}
